@@ -119,7 +119,9 @@ async def root():
     """
     Root endpoint for the API.
     """
-    return {'message': 'Welcome to the Plant Disease Prediction API! Visit /docs for more information.'}
+    return {'message': 'Welcome to the Plant Disease Prediction API! Visit /docs for more information. \n\n'
+    'This API allows you to upload an image of a plant leaf and get a prediction of its health status. \n \n \n'
+    'The following crops are supported: Apple, Blueberry, Cherry (including sour), Corn (maize), Grape, Orange, Peach, Pepper (bell), Potato, Raspberry, Soybean, Squash, Strawberry, and Tomato.'}
 
 @app.get('/hello/{name}')
 async def get_hello_name(name: str):
